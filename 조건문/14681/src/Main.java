@@ -14,5 +14,7 @@ public class Main {
             System.out.print(3);
         else
             System.out.print(4);
+
+        sc.close();
     }
 }

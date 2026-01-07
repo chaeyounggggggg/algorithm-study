@@ -12,5 +12,7 @@ public class p2753 {
         else
             num=0;
         System.out.println(num);
+
+        sc.close();
     }
 }
