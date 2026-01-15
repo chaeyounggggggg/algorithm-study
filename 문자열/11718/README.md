@@ -5,8 +5,8 @@
 입력받은대로 출력하기
 
 ## 접근 아이디어
-BufferedReader를 사용해서 한번에 입력받기
-
+BufferedReader를 사용해서 한번에 입력받기<br>
+Scanner + hasNextLine()으로도 여러 줄 입력 가능
 ## 헷갈렸던 점
 br.readLine을 반복문 조건에서도 출력 부분에서도 쓰니
 출력이 이상하게 되었다
