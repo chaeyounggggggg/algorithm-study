@@ -4,12 +4,12 @@ public class Main {
         Scanner sc= new Scanner(System.in);
 
         String s = sc.nextLine().trim();
-        String[] sp = s.split(" ");
-
+        
         if(s.isEmpty())
             System.out.println(0);
         else{
-            System.out.println(sp.length);
+            String[] arr = s.split(" ");
+            System.out.println(arr.length);
         }
         sc.close();
     }
