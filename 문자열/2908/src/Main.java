@@ -6,23 +6,25 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        String sa = Integer.toString(a);
-        String sb = Integer.toString(b);
+        String sa = String.valueOf(a);
+        String sb = String.valueOf(b);
 
         String ra = "";
-        for(int i=2;i>=0;i--){
-            ra+=sa.charAt(i);
-        }
-
         String rb = "";
-        for(int i=2;i>=0;i--){
-            rb+=sb.charAt(i);
+
+        for(int i=sa.length()-1;i>=0;i--){
+            ra += sa.charAt(i);
+        }
+        for(int i=sb.length()-1;i>=0;i--){
+            rb += sb.charAt(i);
         }
 
-        if(Integer.parseInt(ra)>Integer.parseInt(rb))
+        if(Integer.valueOf(ra) > Integer.valueOf(rb))
             System.out.println(ra);
         else
             System.out.println(rb);
+
+
         sc.close();
     }
 }
