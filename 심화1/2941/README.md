@@ -14,21 +14,6 @@
 
 ## 회고
 항상 범위와 경계값을 생각하자<br>
-좀더 쉽고 간단한 풀이<br>
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.next();
-
-        String[] cro = {"dz=", "c=", "c-", "d-", "lj", "nj", "s=", "z="};
-
-        for (String p : cro) {
-            s = s.replace(p, "A"); // 아무 한 글자로 치환
-        }
-
-        System.out.println(s.length());
-        sc.close();
-    }
-}
+replace 함수를 사용해서 푸니 더 쉬웠다<br>
+replace 함수는 문자열 전체에서 찾을 문자열을 찾아서 바꿀 문자열로 모두 바꾼 새로운 문자열을 만들어준다. <br>
+원본 문자열은 바뀌지 않으므로 s = s.replace() 로 작성해야한다.
