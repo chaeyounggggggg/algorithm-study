@@ -4,31 +4,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int f = n-1;
-        int l = n-1;
-
-        for(int i=1;i<=2*n-1;i++)
-        {
-            for(int j=0;j<2*n-1;j++)
-            {
-                if(j<f)
-                {
-                    System.out.print(" ");
-                }else if(j<=l){
-                    System.out.print("*");
-                }else{
-                    break;
-                }
-
-            }
-            if(i>=n){
-                f++;
-                l--;
+        int blank = n-1;
+        int star = 1;
+        for(int i=0;i<2*n-1;i++){
+            System.out.print(" ".repeat(blank));
+            System.out.println("*".repeat(star));
+            if(i<n-1){
+                blank--;
+                star+=2;
             }else{
-                f--;
-                l++;
+                blank++;
+                star-=2;
             }
-            System.out.println();
         }
         sc.close();
     }
