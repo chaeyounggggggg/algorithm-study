@@ -5,18 +5,14 @@ public class Main {
 
         char[][] arr = new char[5][];
         int max = 0;
-
         for(int i=0;i<5;i++){
             String s = sc.next();
             arr[i] = s.toCharArray();
-            max = Math.max(max, arr[i].length);    
+            max = Math.max(max, arr[i].length);
         }
-
-        for(int j=0;j<max;j++)
-        {
-            for(int i=0;i<5;i++){
-                if(j<arr[i].length)
-                    System.out.print(arr[i][j]);
+        for(int i = 0;i<max;i++){
+            for(int j = 0;j<5;j++){
+                System.out.print(arr[j][i]);
             }
         }
         sc.close();
