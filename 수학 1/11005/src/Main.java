@@ -2,11 +2,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder();
 
         int n = sc.nextInt();
         int b = sc.nextInt();
-
-        String total = "";
+        /*
+         String total = "";
         while(n>0){
             if(n%b>=10){
                 total += (char)(n%b + 55);
@@ -22,6 +23,16 @@ public class Main {
         }
 
         System.out.println(rTotal);
+        */
+        while(n>0){
+            if(n%b>=10)
+                sb.append((char)(n%b + 'A' - 10));
+            else
+                sb.append(n%b);
+            n = n/b;
+        }
+
+        System.out.println(sb.reverse());
         sc.close();
     }
 }
