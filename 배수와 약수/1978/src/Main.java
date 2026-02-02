@@ -12,15 +12,15 @@ public class Main {
             if(num<=1){
                 check = 0;
             }
-            for(int j=2;j<=num-1;j++){
+            for(int j=2;j<num-1;j++){
                 if(num%j==0){
                     check = 0;
                     break;
                 }
+                   
             }
             count += check;
         }
-
         System.out.println(count);
         sc.close();
     }
